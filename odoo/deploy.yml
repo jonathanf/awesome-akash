@@ -4,6 +4,9 @@ version: "2.0"
 services:
   db:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fix and tested on mainnet
     image: postgres:latest
     expose:
       - port: 5432
@@ -11,20 +14,27 @@ services:
         to:
           - service: odoo
     env:
+<<<<<<< HEAD
 =======
     image: postgres
     environment:
 >>>>>>> ADD: Odoo SDL to Awesome Akash
+=======
+>>>>>>> Fix and tested on mainnet
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - POSTGRES_DB=postgres
       
   odoo:
 <<<<<<< HEAD
+<<<<<<< HEAD
     image: odoo:latest
 =======
     image: odoo
 >>>>>>> ADD: Odoo SDL to Awesome Akash
+=======
+    image: odoo:latest
+>>>>>>> Fix and tested on mainnet
     depends_on:
       - db
     expose:
@@ -32,12 +42,17 @@ services:
         to:
           - global: true
 <<<<<<< HEAD
+<<<<<<< HEAD
     # tty: true
     env:
 =======
     tty: true
     environment:
 >>>>>>> ADD: Odoo SDL to Awesome Akash
+=======
+    # tty: true
+    env:
+>>>>>>> Fix and tested on mainnet
       - HOST=db
       - USER=odoo
       - PASSWORD=odoo
@@ -64,6 +79,7 @@ profiles:
     westcoast:
       attributes:
 <<<<<<< HEAD
+<<<<<<< HEAD
         host: akash
 =======
         organization: ovrclk.com
@@ -85,6 +101,16 @@ profiles:
           denom: uakt
           amount: 5000
 >>>>>>> ADD: Odoo SDL to Awesome Akash
+=======
+        host: akash
+      pricing:
+        db: 
+          denom: uakt
+          amount: 100
+        odoo: 
+          denom: uakt
+          amount: 100
+>>>>>>> Fix and tested on mainnet
 
 deployment:
   db:
