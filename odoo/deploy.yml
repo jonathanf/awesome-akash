@@ -50,12 +50,9 @@ profiles:
     westcoast:
       attributes:
         host: akash
-<<<<<<< HEAD
-=======
       signedBy:
         anyOf:
           - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
->>>>>>> 84e21dbe0c75ddd20ac6144b3b7fabba2c9b7ce5
       pricing:
         db: 
           denom: uakt
