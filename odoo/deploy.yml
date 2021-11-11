@@ -80,6 +80,7 @@ profiles:
       attributes:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         host: akash
 =======
         organization: ovrclk.com
@@ -103,6 +104,12 @@ profiles:
 >>>>>>> ADD: Odoo SDL to Awesome Akash
 =======
         host: akash
+=======
+        host: akash
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+>>>>>>> fix conflicts
       pricing:
         db: 
           denom: uakt
